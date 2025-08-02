@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
   return (
     <>
-      <div className='min-h-screen min-w-screen flex justify-center items-center bg-gray-900'>
+      <div className='min-h-screen min-w-screen flex justify-center items-center bg-gray-900 flex-col'>
 
         <div className='min-h-[450px] max-w-[430px] w-[95%]  bg-blue-200 rounded-lg border-5 border-blue-500 p-10'>
           <form>
@@ -35,6 +35,7 @@ const Login = () => {
           </form>
 
         </div>
+        <Link to="/dashboard" className='max-w-[430px] w-[95%] text-center bg-gradient-to-r from-red-500 via-yellow-500 to-orange-500 rounded-lg border-4 border-white mt-5 pt-3 pb-3 font-bold text-xl cursor-pointer'>Go to Dashboard</Link>
 
       </div>
     </>

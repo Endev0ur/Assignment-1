@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 const Dashboard = () => {
   
@@ -26,7 +27,7 @@ const Dashboard = () => {
   } , [])
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4 py-8">
+    <div className="flex items-center justify-center flex-col min-h-screen bg-gray-100 px-4 py-8">
       <div className="w-full max-w-4xl bg-white shadow-md rounded-2xl p-6">
         {/* Heading */}
         <h1 className="text-4xl font-bold mb-6 text-center text-blue-600">INTERN DASHBOARD</h1>
@@ -59,6 +60,9 @@ const Dashboard = () => {
           </ul>
         </div>
       </div>
+      <Link to="/leaderboard" className='max-w-[430px] w-[95%] text-center bg-gradient-to-r text-white from-green-500 via-blue-500 to-red-500 rounded-lg border-4 border-gray-600 mt-5 pt-3 pb-3 font-bold text-xl cursor-pointer'>Go to Leadrboard</Link>
+
+      <Link to="/login" className='max-w-[430px] w-[95%] text-center bg-gradient-to-r from-blue-500 via-white to-purple-500 rounded-lg border-4 border-gray-600 mt-5 pt-3 pb-3 font-bold text-xl cursor-pointer'>Go to Login</Link>
     </div>
   );
 }
