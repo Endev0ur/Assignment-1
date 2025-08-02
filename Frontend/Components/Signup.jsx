@@ -38,7 +38,7 @@ const Signup = () => {
 
               <br />
               <br />
-              <p className='text-lg'>Don't Have an Account ? <Link to="/login" className='text-sky-900 underline cursor-pointer'>Login</Link></p>
+              <p className='text-lg'>Already have an account ? <Link to="/login" className='text-sky-900 underline cursor-pointer'>Login</Link></p>
             </fieldset>
 
           </form>
